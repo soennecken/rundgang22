@@ -225,9 +225,10 @@ main .daten {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 200px;
+  height: 100%;
 }
 
-.line.recharts-cartesian-axis-line {
-  stroke: var(--primary) !important;
+.recharts-default-tooltip {
+  background: none !important;
+  border: none !important;
 }

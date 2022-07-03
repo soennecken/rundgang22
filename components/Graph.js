@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, PureComponent } from "react";
 
 import {
   LineChart,
@@ -12,7 +12,6 @@ import {
 } from "recharts";
 
 const Graph = (props) => {
-
   const [stockChartXValue, setStockChartXValue] = useState([]);
   const [stockChartYValue, setStockChartYValue] = useState([]);
 
@@ -48,36 +47,55 @@ const Graph = (props) => {
   }, []);
 
   const data = [
-    { name: stockChartXValue[0], uv: stockChartYValue[0] },
-    { name: stockChartXValue[1], uv: stockChartYValue[1] },
-    { name: stockChartXValue[2], uv: stockChartYValue[2] },
-    { name: stockChartXValue[3], uv: stockChartYValue[3] },
-    { name: stockChartXValue[4], uv: stockChartYValue[4] },
-    { name: stockChartXValue[5], uv: stockChartYValue[5] },
-    { name: stockChartXValue[6], uv: stockChartYValue[6] },
-    { name: stockChartXValue[7], uv: stockChartYValue[7] },
-    { name: stockChartXValue[8], uv: stockChartYValue[8] },
-    { name: stockChartXValue[9], uv: stockChartYValue[9] },
-    { name: stockChartXValue[10], uv: stockChartYValue[10] },
-    { name: stockChartXValue[11], uv: stockChartYValue[11] },
-    { name: stockChartXValue[12], uv: stockChartYValue[12] },
-    { name: stockChartXValue[13], uv: stockChartYValue[13] },
-    { name: stockChartXValue[14], uv: stockChartYValue[14] },
-    { name: stockChartXValue[15], uv: stockChartYValue[15] },
-    { name: stockChartXValue[16], uv: stockChartYValue[16] },
-    { name: stockChartXValue[17], uv: stockChartYValue[17] },
-    { name: stockChartXValue[18], uv: stockChartYValue[18] },
-    { name: stockChartXValue[19], uv: stockChartYValue[19] },
+    { name: stockChartXValue[99], uv: stockChartYValue[99] },
+    { name: stockChartXValue[90], uv: stockChartYValue[90] },
+    { name: stockChartXValue[80], uv: stockChartYValue[80] },
+    { name: stockChartXValue[70], uv: stockChartYValue[70] },
+    { name: stockChartXValue[60], uv: stockChartYValue[60] },
+    { name: stockChartXValue[50], uv: stockChartYValue[50] },
+    { name: stockChartXValue[40], uv: stockChartYValue[40] },
+    { name: stockChartXValue[30], uv: stockChartYValue[30] },
     { name: stockChartXValue[20], uv: stockChartYValue[20] },
-    { name: stockChartXValue[21], uv: stockChartYValue[21] },
+    { name: stockChartXValue[10], uv: stockChartYValue[10] },
+    { name: stockChartXValue[0], uv: stockChartYValue[0] },
   ];
+
+  const top = Math.max(...stockChartYValue)
+  const bottom = Math.min(...stockChartYValue)
+
+  console.log(stockChartYValue, top)
+
+  const CustomizedDot = () => {
+    <svg />;
+  };
+
+  class CustomizedLabels extends PureComponent {
+    render() {
+      const { x, y, stroke, value } = this.props;
+
+      return (
+        <text
+          x={x}
+          y={y}
+          dy={-5}
+          dx={10}
+          fill={stroke}
+          color={"#c9ff00"}
+          fontSize={8}
+          textAnchor="left"
+          stroke="#c9ff00"
+        >
+          {value}
+        </text>
+      );
+    }
+  }
 
   return (
     <>
-
       <LineChart
         width={300}
-        height={100}
+        height={150}
         data={data}
         margin={{
           top: 5,
@@ -87,15 +105,16 @@ const Graph = (props) => {
         }}
       >
         {/* <CartesianGrid strokeDasharray="3 3" /> */}
-        <XAxis dataKey="name" />
-        <YAxis dataKey="uv" />
-        {/* <Tooltip /> */}
-        {/* <Legend /> */}
+        <XAxis dataKey="name" stroke="#c9ff00" />
+        <YAxis domain={[bottom, top]} stroke="#c9ff00" />
+        {/* <YAxis allowDataOverflow domain={[bottom, top]} type="number" yAxisId="1" /> */}
+        <Tooltip />
         <Line
           type="monotone"
           dataKey="uv"
           stroke="#c9ff00"
-          activeDot={{ r: 8 }}
+          dot={<CustomizedDot />}
+          label={<CustomizedLabels />}
         />
       </LineChart>
     </>
