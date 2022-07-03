@@ -8,7 +8,6 @@ const Info = () => {
 
   useEffect(() => {
     const handleScroll = (event) => {
-      console.log("window.scrollY", window.scrollY);
       window.scrollY > 0 ? setOpen(true) : "";
       window.scrollY < 0 ? setOpen(false) : "";
 
@@ -20,9 +19,6 @@ const Info = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-
-  console.log(open)
 
   return (
     <main>

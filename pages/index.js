@@ -18,7 +18,7 @@ export default function Home() {
         <Webcam />
         <Info />
         <Headlines />
-        {/* <Daten /> */}
+        <Daten />
       </main>
     </div>
   );
