@@ -12,7 +12,7 @@ const Webcam = () => {
           height="1138"
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </main>
