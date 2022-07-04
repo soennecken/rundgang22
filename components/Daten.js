@@ -1,16 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef  } from "react";
 
 import Graph from "./Graph";
 
 const Daten = () => {
-  const [weatherData, setWeatherData] = useState([{}]);
+  const [weatherData, setWeatherData] = useState([{}])
+
 
   return (
     <main className="daten">
-      <div className="graphWrapper">
-        <Graph symbol={"DAI.DEX"} />
-        <Graph symbol={"AAPL"} />
+      <div className="stocksWrapper" >
+        <div className="graphWrapper">
+          <Graph symbol={"DAI.DEX"} stockName={"Daimler AG"} />
+          <Graph symbol={"AAPL"} stockName={"Apple Corp."} />
+        </div>
+        <div className="graphWrapper" >
+          <Graph symbol={"DAI.DEX"} stockName={"Daimler AG"} />
+          <Graph symbol={"AAPL"} stockName={"Apple Corp."} />
+        </div>
       </div>
+      
     </main>
   );
 };

@@ -226,9 +226,42 @@ main .daten {
   justify-content: flex-end;
   align-items: flex-end;
   height: 100%;
+  margin: 50px 0 ;
+
 }
 
 .recharts-default-tooltip {
   background: none !important;
   border: none !important;
+}
+
+.graphOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.currentDate {
+  height: 5px;
+}
+
+.currentValue {
+  font-size: 13pt;
+  line-height: 0;
+  height: 5px;
+  padding-right: 15px;
+}
+
+.dataWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 45px;
+  /* padding-right: 30px; */
+}
+
+.stocksWrapper {
+  overflow-y: scroll;
+  height: 100%;
 }

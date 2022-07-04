@@ -60,10 +60,10 @@ const Graph = (props) => {
     { name: stockChartXValue[0], uv: stockChartYValue[0] },
   ];
 
-  const top = Math.max(...stockChartYValue)
-  const bottom = Math.min(...stockChartYValue)
+  const top = Math.max(...stockChartYValue);
+  const bottom = Math.min(...stockChartYValue);
 
-  console.log(stockChartYValue, top)
+  console.log(stockChartYValue, top);
 
   const CustomizedDot = () => {
     <svg />;
@@ -92,7 +92,21 @@ const Graph = (props) => {
   }
 
   return (
-    <>
+    <div className="graphOuter">
+      <div className="dataWrapper">
+        <div className="dataInner">
+          <p className="currentValue">{props.stockName}: </p>
+        </div>
+        <div className="dataInner">
+          <p className="currentDate">{stockChartXValue[0]}</p>
+          <p className="currentValue">
+            {stockChartYValue[0]}
+            {stockChartYValue[0] - stockChartYValue[1] > 0
+              ? ` (+${(stockChartYValue[0] - stockChartYValue[1]).toFixed(2)})`
+              : ` (${(stockChartYValue[0] - stockChartYValue[1]).toFixed(2)})`}
+          </p>
+        </div>
+      </div>
       <LineChart
         width={300}
         height={150}
@@ -117,7 +131,7 @@ const Graph = (props) => {
           label={<CustomizedLabels />}
         />
       </LineChart>
-    </>
+    </div>
   );
 };
 
