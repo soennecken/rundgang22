@@ -108,8 +108,8 @@ main div {
 
 .logo {
   position: absolute;
-  top: 5px;
-  left: 0px;
+  top: 13px;
+  left: 12px;
   width: 300px;
   z-index: 500;
 }
@@ -120,7 +120,7 @@ main div {
 }
 
 .headMarqueeInner {
-  width: calc(100vw - 300px);
+  width: calc(100vw - 315px);
 }
 
 .infoContent {
@@ -253,7 +253,7 @@ main .daten {
   font-size: 8px;
   position: fixed;
   bottom: 0px;
-  /* margin: 10px; */
+  margin: 0 10px;
   z-index: 50;
   color: var(--primary) !important;
   background: linear-gradient(var(--primary) 0%, rgba(0, 0, 0, 0) 100%);
@@ -266,6 +266,11 @@ main .daten {
   align-items: flex-end;
   height: 100%;
   margin: 50px 0;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .recharts-default-tooltip {
@@ -300,19 +305,26 @@ main .daten {
 
 .stocksWrapper {
   width: 50%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   height: 100%;
+
+}
+
+@keyframes example {
+  from {transform: translateY(0);}
+  to {transform: translateY(-200px);}
 }
 
 /* H O R O S K O P  */
 
 .horoskopWrapper {
   width: 50%;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .horoskopOuter {
   margin: 10px 0 28px;
+  transition: transform 240s linear;
 }
 
 .horoskopOuter p {
