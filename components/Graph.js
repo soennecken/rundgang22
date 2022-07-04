@@ -27,7 +27,7 @@ const Graph = (props) => {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
+        // console.log(data);
 
         for (var key in data["Time Series (Daily)"]) {
           stockChartXValuesFunction.push(key);
@@ -63,7 +63,6 @@ const Graph = (props) => {
   const top = Math.max(...stockChartYValue);
   const bottom = Math.min(...stockChartYValue);
 
-  console.log(stockChartYValue, top);
 
   const CustomizedDot = () => {
     <svg />;

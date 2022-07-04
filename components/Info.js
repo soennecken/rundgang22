@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-import logo from "../public/images/RG22_Logo.png";
+import logo from "../public/images/logo_gif.gif";
 
 const Info = () => {
   const [open, setOpen] = useState(false);
@@ -10,7 +11,6 @@ const Info = () => {
     const handleScroll = (event) => {
       window.scrollY > 0 ? setOpen(true) : "";
       window.scrollY < 0 ? setOpen(false) : "";
-
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,48 +23,52 @@ const Info = () => {
   return (
     <main>
       <div className="logo">
-        <img src={logo} />
+        <Image src={logo} />
       </div>
       <div className={open ? "info" : "closed"} onClick={() => setOpen(!open)}>
-        <Marquee gradient={false}>
-          <div className="liveTicker">
-            +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE++++++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-            LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-            +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-            LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-            +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-            LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-            +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-            LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-            +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
-            LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+        <div className="headMarqueeWrapper">
+          <div className="headMarqueeInner">
+            <Marquee gradient={false}>
+              <div className="liveTicker">
+                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
+                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
+                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
+                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
+                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+              </div>
+            </Marquee>
           </div>
-        </Marquee>
+        </div>
         <div className={open ? "infoContent" : "hide"}>
           <Marquee gradient={false}>
             <div className="liveTicker">
