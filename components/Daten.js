@@ -9,7 +9,7 @@ const Daten = () => {
   const elementRef = useRef(null);
 
   useEffect(() => {
-    setHeight(`${elementRef.current.clientHeight}`);
+    setHeight(elementRef.current.clientHeight);
 
   }, []);
 
