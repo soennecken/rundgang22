@@ -229,7 +229,8 @@ tr {
 }
 
 main .info {
-  height: calc(72vh - 150px);
+  height: 100vh;
+  backdrop-filter: blur(20px);
 }
 
 .headMarqueeWrapper {
