@@ -44,10 +44,6 @@ a {
   box-sizing: border-box;
 }
 
-.outer {
-  height: 110vh;
-}
-
 main .webcam {
   position: fixed;
   display: flex;
@@ -226,34 +222,37 @@ tr {
 }
 
 @media only screen and (max-width: 600px) {
-.logo {
-  top: 10px;
-  width: 100vw;
-  left: 0;
-}
+  .outer {
+    height: 110vh;
+    overflow-x: hidden;
+  }
 
-.imageWrapper {
-  padding-bottom: 100px;
-}
+  .logo {
+    top: 10px;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+  }
 
-main .info {
-  height: 100vh;
-  backdrop-filter: blur(20px);
-  background: linear-gradient(
-    var(--primary) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
+  .imageWrapper {
+    padding-bottom: 100px;
+  }
 
-main .webcam {
-  height: 110vh;
-  overflow-y: scroll;
-}
+  main .info {
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    background: linear-gradient(var(--primary) 0%, rgba(0, 0, 0, 0) 100%);
+  }
 
-.headMarqueeWrapper {
-  padding-bottom: 14px;
-  opacity: 0;
-}
+  main .webcam {
+    height: 110vh;
+    overflow-y: scroll;
+  }
+
+  .headMarqueeWrapper {
+    padding-bottom: 14px;
+    opacity: 0;
+  }
 
   tr {
     display: flex;
@@ -399,12 +398,26 @@ main .daten {
   width: 50%;
   overflow-y: hidden;
   height: 100%;
-
 }
 
 @keyframes example {
-  from {transform: translateY(0);}
-  to {transform: translateY(-500px);}
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-500px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .graphWrapper {
+    flex-direction: column;
+    height: 350px;
+  }
+  .dataWrapper {
+    justify-content: flex-end;
+    /* padding-top: 80px; */
+  }
 }
 
 /* H O R O S K O P  */
@@ -421,6 +434,7 @@ main .daten {
 
 .horoskopOuter p {
   font-size: 10.5pt;
+  line-height: 13pt;
 }
 
 .horoskopOuter h1 {
@@ -442,7 +456,7 @@ main .daten {
 
 .horoskopOuter hr {
   border: 0.5px solid var(--primary);
-  opacity: 0.5
+  opacity: 0.5;
 }
 
 .zodiacWrapper table td {
@@ -467,4 +481,11 @@ main .daten {
 .zodiacRow {
   display: flex;
   height: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .zodiacWrapper table td {
+    width: 100%;
+    height: 18px;
+  }
 }
