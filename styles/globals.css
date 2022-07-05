@@ -229,7 +229,7 @@ tr {
 }
 
 main .info {
-  height: calc(72vh - 80px);
+  height: calc(72vh - 150px);
 }
 
 .headMarqueeWrapper {
