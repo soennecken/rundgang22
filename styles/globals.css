@@ -228,6 +228,10 @@ tr {
   left: 0;
 }
 
+main .info {
+  height: calc(72vh - 80px);
+}
+
 .headMarqueeWrapper {
   padding-bottom: 14px;
   opacity: 0;
