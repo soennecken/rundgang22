@@ -3,7 +3,7 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 import logo from "../public/images/logo_gif.gif";
-import jana from "../public/images/02.png"
+import jana from "../public/images/02.png";
 
 const Info = () => {
   const [open, setOpen] = useState(false);
@@ -176,13 +176,14 @@ const Info = () => {
                 <td className="col1">13:00</td>
 
                 <td className="col1">Konservierung und Restaurierung</td>
-                <td className="col1">Treffpunkt:</td>
+                <td className="col1">Neubau 2, Erdgeschoss, Infostand</td>
               </tr>
               <tr>
                 <td className="col1"> </td>
                 <td className="col1">14:00</td>
 
                 <td className="col1">Kunst/Künstlerisches Lehramt</td>
+
                 <td className="col1">Neubau 2, Erdgeschoss, Infostand</td>
               </tr>
               <tr>
@@ -190,28 +191,32 @@ const Info = () => {
                 <td className="col1">15:00</td>
 
                 <td className="col1">Textildesign</td>
-                <td className="col1"> </td>
+
+                <td className="col1">Neubau 2, Erdgeschoss, Infostand</td>
               </tr>
               <tr>
                 <td className="col1"> </td>
                 <td className="col1">16:00</td>
 
                 <td className="col1">Kommunikationsdesign</td>
-                <td className="col1"> </td>
+
+                <td className="col1">Neubau 2, Erdgeschoss, Infostand</td>
               </tr>
               <tr>
                 <td className="col1"> </td>
                 <td className="col1">17:00</td>
 
                 <td className="col1">Industrial Design</td>
-                <td className="col1"> </td>
+
+                <td className="col1">Neubau 2, Erdgeschoss, Infostand</td>
               </tr>
               <tr>
                 <td className="col1"> </td>
                 <td className="col1">18:00</td>
 
                 <td className="col1">Architektur</td>
-                <td className="col1"> </td>
+
+                <td className="col1">Neubau 2, Erdgeschoss, Infostand</td>
               </tr>
             </tbody>
           </table>
@@ -329,6 +334,8 @@ const Info = () => {
                     Jana Rzehak
                     <br />
                     Sonja Schwarz
+                    <br />
+                    <br />
                   </td>
                   <td className="col1">Technische Umsetzung</td>
                   <td className="col1">Mark Julien Hahn</td>
@@ -339,9 +346,11 @@ const Info = () => {
                   <td className="col1">Marion Butsch</td>
                   <td className="col1">Schriften</td>
                   <td className="col1">
-                    Acumin Pro ()
+                    Acumin Pro
                     <br />
                     Pirelli (Optimo.ch)
+                    <br />
+                    <br />
                   </td>
                 </tr>
 

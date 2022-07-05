@@ -74,8 +74,7 @@ main .webcam {
   height: 100%;
 }
 
-/*
-padding-bottom: 13pt;  I N F O  */
+/* I N F O  */
 
 main .info {
   position: fixed;
@@ -219,6 +218,30 @@ tr {
 
 .imageInner {
   width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+.headMarqueeWrapper {
+  padding-bottom: 14px;
+}
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  td {
+    padding-bottom: 8px;
+  }
+  .col1 {
+    width: 100%;
+  }
+
+  .program {
+    font-size: 12pt;
+    line-height: 15pt;
+  }
 }
 
 /* H E A D L I N E S */
