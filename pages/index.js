@@ -6,7 +6,7 @@ import Webcam from "../components/Webcam";
 
 export default function Home() {
   return (
-    <div>
+    <div className="outer">
       <Head>
         <title>Rundgang 22</title>
         <meta name="description" content="Rundgang 22" />

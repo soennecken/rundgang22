@@ -44,6 +44,10 @@ a {
   box-sizing: border-box;
 }
 
+.outer {
+  height: 110vh;
+}
+
 main .webcam {
   position: fixed;
   display: flex;
@@ -243,6 +247,7 @@ main .info {
 
 main .webcam {
   height: 110vh;
+  overflow-y: scroll;
 }
 
 .headMarqueeWrapper {
