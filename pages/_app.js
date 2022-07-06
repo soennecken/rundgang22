@@ -7,12 +7,13 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
   const hideScreen = () => {
-    setTimeout(setLoading(false), 7000)
+
   }
 
   useEffect(() => {
-    hideScreen()
-    console.log(loading)
+    setTimeout(function () {
+      setLoading(false);
+    }, 5000)
   }, []);
 
   return (
