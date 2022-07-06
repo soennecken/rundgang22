@@ -82,6 +82,7 @@ main .webcam {
   width: 100vw;
   transition: height 1s linear, opacity 2s linear;
   z-index: 1000;
+  overflow: hidden;
   background: linear-gradient(var(--primary) 0%, var(--primary) 50%, rgba(0, 0, 0, 0) 100%);
 }
 

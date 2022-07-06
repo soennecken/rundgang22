@@ -4,13 +4,11 @@ import animationData from "../public/animations/data.json";
 
 const Loading = (props) => {
   const active = {
-    height: "200vh",
-    opacity: "1",
+    height: "200vh"
   };
 
   const hidden = {
-    height: "200vh",
-    opacity: "0",
+    height: "0"
   };
 
   const defaultOptions = {
