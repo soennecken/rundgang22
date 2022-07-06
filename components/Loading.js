@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
 import animationDataDesktop from "../public/animations/data.json";
-import animationDataMobile from "../public/animations/data.json";
+import animationDataMobile from "../public/animations/data-hoch.json";
 
 const Loading = (props) => {
   const active = {

@@ -86,6 +86,22 @@ main .webcam {
   background: linear-gradient(var(--primary) 0%, var(--primary) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
+.loadingMobile {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .loadingMobile {
+    display: block
+  }
+
+  .loadingDesktop {
+    display: none;
+  }
+}
+
 /* I N F O  */
 
 main .info {
