@@ -74,6 +74,17 @@ main .webcam {
   height: 100%;
 }
 
+/* L O A D I N G  */
+
+.loadingWrapper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  transition: height 1s linear, opacity 2s linear;
+  z-index: 1000;
+  background: linear-gradient(var(--primary) 0%, var(--primary) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
 /* I N F O  */
 
 main .info {

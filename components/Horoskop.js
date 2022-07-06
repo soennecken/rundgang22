@@ -50,7 +50,6 @@ const Horoskop = (props) => {
 
   const none = {};
 
-  console.log(props.height)
 
   return (
     <div className="horoskopOuter" style={running ? style01 : none}>
