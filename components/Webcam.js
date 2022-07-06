@@ -1,13 +1,15 @@
 import React from "react";
 
-import Vimeo from "@u-wave/react-vimeo";
+
+// HIER VIMEO ID EINFÜGEN!
+const videoID = "29950141" 
 
 const Webcam = () => {
   return (
     <main className="webcam">
       <div className="embed-container">
         <iframe
-          src="https://player.vimeo.com/video/2260168?h=443ac71bde&background=true"
+          src={`https://player.vimeo.com/video/${videoID}?h=443ac71bde&background=true`}
           width="440"
           height="1138"
           frameBorder="0"

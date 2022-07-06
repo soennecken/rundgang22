@@ -31,41 +31,41 @@ const Info = () => {
           <div className="headMarqueeInner">
             <Marquee gradient={false}>
               <div className="liveTicker">
-                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK
                 LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK
                 LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK
                 LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK
                 LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
-                +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK LIVE+++ABK
-                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE++++++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK LIVE+++ABK
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK LIVE+++ABK
                 LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE +++ABK
-                LIVE++++++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
+                LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE+++ABK LIVE
               </div>
             </Marquee>
           </div>
@@ -295,7 +295,8 @@ const Info = () => {
                 </tr>
                 <tr>
                   <td className="col1">
-                    Angaben gemäß § 5 TMG (Telemediengesetz)
+                    Angaben gemäß § 5 TMG (Telemediengesetz) <br />
+                    <br />
                   </td>
                 </tr>
               </thead>
@@ -321,6 +322,7 @@ const Info = () => {
                     <br />
                     <a href="https://abk-stuttgart.de">www.abk-stuttgart.de</a>
                     <br />
+                    <br />
                   </td>
                 </tr>
 
@@ -338,12 +340,18 @@ const Info = () => {
                     <br />
                   </td>
                   <td className="col1">Technische Umsetzung</td>
-                  <td className="col1">Mark Julien Hahn</td>
+                  <td className="col1">
+                    Mark Julien Hahn <br />
+                    <br />
+                  </td>
                 </tr>
 
                 <tr>
                   <td className="col1">Projektkoordination</td>
-                  <td className="col1">Marion Butsch</td>
+                  <td className="col1">
+                    Marion Butsch <br />
+                    <br />
+                  </td>
                   <td className="col1">Schriften</td>
                   <td className="col1">
                     Acumin Pro

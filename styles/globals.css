@@ -296,6 +296,10 @@ tr {
     padding-bottom: 10px;
   }
 
+  .colophon tr {
+    padding-bottom: 0;
+  }
+
   td {
     padding-bottom: 5px;
   }
