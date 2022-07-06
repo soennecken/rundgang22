@@ -31,7 +31,7 @@ const Headlines = () => {
     <main className="headlines">
       <div
         className="headlineWrapper"
-        style={{bottom: `calc(${(viewportHeight*0.4)}+17px)`}}
+        style={{bottom: `calc(${(viewportHeight*0.4)} + 17px)`}}
         onClick={() => {
           updateIndex();
         }}

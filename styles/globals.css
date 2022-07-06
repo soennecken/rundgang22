@@ -77,13 +77,21 @@ main .webcam {
 /* L O A D I N G  */
 
 .loadingWrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
+  height: 100vh;
   transition: height 1s linear, opacity 2s linear;
   z-index: 1000;
   overflow: hidden;
   background: linear-gradient(var(--primary) 0%, var(--primary) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.loadingDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .loadingMobile {
@@ -390,7 +398,7 @@ h1 {
     width: 100%;
     height: 150px;
     position: absolute;
-    bottom: calc(40vh + 17px)
+    top: 80px;
   }
   .weiter {
     position: absolute;
