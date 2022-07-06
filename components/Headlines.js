@@ -21,7 +21,12 @@ const Headlines = () => {
 
   return (
     <main className="headlines">
-      <div className="headlineWrapper">
+      <div
+        className="headlineWrapper"
+        onClick={() => {
+          updateIndex();
+        }}
+      >
         <div className="image">
           <div className="thumbnailWrapper">
             <Image src={headlineImages[index]} />
@@ -29,16 +34,11 @@ const Headlines = () => {
         </div>
 
         <div className="line">
-          <h1>
-            <a href="https://abk.live" target="_blank" rel="noreferrer">{headlineTexts[index]}</a>
-          </h1>
-          <div
-            className="weiter"
-            onClick={() => {
-              updateIndex();
-            }}
-          >
-            <div>weiter</div>
+          <h1>{headlineTexts[index]}</h1>
+          <div className="weiter">
+            <a href="https://abk.live" target="_blank" rel="noreferrer">
+              <div>weiter zu abk.live</div>
+            </a>
           </div>
         </div>
       </div>

@@ -6,9 +6,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
-  const hideScreen = () => {
 
-  }
 
   useEffect(() => {
     setTimeout(function () {

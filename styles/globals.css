@@ -301,6 +301,7 @@ main .headlines {
   width: 37.5%;
   height: 12.5vw;
   display: flex;
+  cursor: pointer;
 }
 
 .line {
@@ -340,6 +341,10 @@ h1 {
   cursor: pointer;
 }
 
+.headlineWrapper:hover line{
+  background: var(--primary) !important;
+}
+
 .line :hover {
   color: var(--primary);
 }
@@ -362,12 +367,14 @@ h1 {
   }
 
   main .headlines {
-    height: calc(60vh - 15px);
+    height: 100vh;
   }
 
   .headlineWrapper {
     width: 100%;
     height: 150px;
+    position: absolute;
+    bottom: calc(40vh + 17px)
   }
   .weiter {
     position: absolute;

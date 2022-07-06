@@ -1,26 +1,39 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../public/animations/data.json";
+import animationDataDesktop from "../public/animations/data.json";
+import animationDataMobile from "../public/animations/data.json";
 
 const Loading = (props) => {
   const active = {
-    height: "200vh"
+    height: "200vh",
   };
 
   const hidden = {
-    height: "0"
+    height: "0",
   };
 
-  const defaultOptions = {
+  const animationDesktop = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animationDataDesktop,
+    renderer: "svg",
+  };
+
+  const animationMobile = {
+    loop: true,
+    autoplay: true,
+    animationData: animationDataMobile,
     renderer: "svg",
   };
 
   return (
     <div className={"loadingWrapper"} style={props.loading ? active : hidden}>
-      <Lottie options={defaultOptions} height={"100vh"} width={"100vw"} />
+      <div className="loadingDesktop">
+        <Lottie options={animationDesktop} height={"100vh"} width={"100vw"} />
+      </div>
+      <div className="loadingMobile">
+        <Lottie options={animationMobile} height={"100vh"} width={"100vw"} />
+      </div>
     </div>
   );
 };
