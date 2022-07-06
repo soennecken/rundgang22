@@ -277,11 +277,12 @@ tr {
 
 main .headlines {
   width: calc(100vw - 20px);
-  height: 80vh;
+  height: calc(72vh - 15px);
   position: fixed;
   top: 0px;
   margin: 10px;
   display: flex;
+  align-items: flex-end;
 }
 
 .headlineWrapper {
@@ -294,19 +295,19 @@ main .headlines {
   width: 66.6%;
   height: 100%;
   background: white;
-  /* overflow: hidden; */
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: flex-end; */
   flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5px;
 }
 
 h1 {
-  margin-top: -17px;
+  margin-top: -4px;
   margin-left: 1px;
   font-weight: normal;
   font-family: Pirelli;
   font-size: 80px;
+  line-height: 65px;
   font-variation-settings: "wdth" 120;
 }
 
@@ -318,9 +319,8 @@ h1 {
   padding-right: 4px;
   font-size: 20px;
   bottom: 0px;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  right: 0;
+  text-align: right;
 }
 
 .weiter div:hover {
@@ -328,10 +328,38 @@ h1 {
   cursor: pointer;
 }
 
+.line :hover {
+  color: var(--primary);
+}
+
 .image {
   width: 33.3%;
   height: 100%;
   overflow: hidden;
+}
+
+.thumbnailWrapper * {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: -4px;
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  main .headlines {
+    height: calc(60vh - 15px);
+  }
+
+  .headlineWrapper {
+    width: 100%;
+    height: 150px;
+  }
+  .weiter {
+    position: absolute;
+  }
 }
 
 /* D A T E N */
@@ -410,7 +438,6 @@ main .daten {
 }
 
 @media only screen and (max-width: 600px) {
-
   main .daten {
     flex-direction: column;
     height: 40vh;

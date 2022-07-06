@@ -12,37 +12,30 @@ const Headlines = () => {
   const random = Math.floor(Math.random() * headlineTexts.length);
 
   const [index, setIndex] = useState(random);
-  const [vertical, setVertical] = useState(0);
-  const [horizontal, setHorizontal] = useState(0);
 
   function updateIndex() {
     {
       index < headlineTexts.length - 1 ? setIndex(index + 1) : setIndex(0);
     }
   }
-  function changePosition() {
-    setVertical(Math.floor(Math.random() * 3)),
-      setHorizontal(Math.floor(Math.random() * 3));
-  }
-
-  const styles = {
-    justifyContent: positions[vertical],
-    alignItems: positions[horizontal],
-  };
 
   return (
-    <main className="headlines" style={styles}>
+    <main className="headlines">
       <div className="headlineWrapper">
         <div className="image">
-          <Image src={headlineImages[index]} />
+          <div className="thumbnailWrapper">
+            <Image src={headlineImages[index]} />
+          </div>
         </div>
 
         <div className="line">
-          <h1>{headlineTexts[index]}</h1>
+          <h1>
+            <a href="https://abk.live" target="_blank">{headlineTexts[index]}</a>
+          </h1>
           <div
             className="weiter"
             onClick={() => {
-              updateIndex(), changePosition();
+              updateIndex();
             }}
           >
             <div>weiter</div>

@@ -23,7 +23,7 @@ const Info = () => {
 
   return (
     <main>
-      <div className="logo">
+      <div className="logo" onClick={() => setOpen(!open)}>
         <Image src={logo} />
       </div>
       <div className={open ? "info" : "closed"} onClick={() => setOpen(!open)}>
