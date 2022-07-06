@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     hideScreen()
-
+    console.log(loading)
   }, []);
 
   return (
