@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 import image01 from "../public/images/01.png";
@@ -9,7 +9,10 @@ const headlineImages = [image01, image02, image01, image02];
 const positions = ["flex-start", "center", "flex-end"];
 
 const Headlines = () => {
+  const [viewportHeight, setViewportHeight] = useState(0)
+
   const random = Math.floor(Math.random() * headlineTexts.length);
+
 
   const [index, setIndex] = useState(random);
 
@@ -19,10 +22,16 @@ const Headlines = () => {
     }
   }
 
+  useEffect(  () => {
+    setViewportHeight(window.innerHeight),
+    console.log(viewportHeight)
+  })
+
   return (
     <main className="headlines">
       <div
         className="headlineWrapper"
+        style={{bottom: `calc(${(viewportHeight*0.4)}+17px)`}}
         onClick={() => {
           updateIndex();
         }}
