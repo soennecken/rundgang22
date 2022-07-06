@@ -30,7 +30,7 @@ const Headlines = () => {
 
         <div className="line">
           <h1>
-            <a href="https://abk.live" target="_blank">{headlineTexts[index]}</a>
+            <a href="https://abk.live" target="_blank" rel="noreferrer">{headlineTexts[index]}</a>
           </h1>
           <div
             className="weiter"
