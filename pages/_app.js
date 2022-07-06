@@ -15,9 +15,6 @@ function MyApp({ Component, pageProps }) {
 
   }, []);
 
-
-  console.log(loading)
-
   return (
     <>
       <Loading loading={loading} />

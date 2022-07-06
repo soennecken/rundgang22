@@ -12,8 +12,7 @@ export default function Home() {
         <meta name="description" content="Rundgang 22" />
         <link rel="icon" href="/favicon-2.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/ecl7rwj.css" />
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      </Head>
+     </Head>
 
       <main>
         <Webcam />
