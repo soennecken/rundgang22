@@ -127,7 +127,7 @@ const Headlines = () => {
       >
         <div className="image">
           <div className="thumbnailWrapper">
-            <Image src={headlineImages[index]} />
+            <Image src={headlineImages[index]} placeholder="blur"/>
           </div>
         </div>
 
