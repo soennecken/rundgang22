@@ -336,37 +336,40 @@ main .headlines {
   width: 66.6%;
   height: 100%;
   background: white;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   padding-top: 5px;
 }
 
-h1 {
+.line h1 {
   margin-top: -4px;
-  margin-left: 1px;
+  margin-left: 1.5px;
   font-weight: normal;
   font-family: Pirelli;
-  font-size: 80px;
-  line-height: 65px;
-  font-variation-settings: "wdth" 120;
+  font-size: 4vw;
+  line-height: 3.5vw;
+  letter-spacing: 0.5px;
+  font-variation-settings: "wdth" 150;
+  overflow: hidden;
+  height: 100%;
 }
 
 .weiter {
   font-family: acumin-pro;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   text-transform: uppercase;
   padding-right: 4px;
-  font-size: 20px;
+  font-size: 1.3vw;
+  position: absolute;
   bottom: 0px;
-  right: 0;
-  text-align: right;
 }
 
 .weiter div:hover {
-  color: var(--primary);
+  /**color: var(--primary);**/
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .headlineWrapper:hover line{
@@ -374,7 +377,8 @@ h1 {
 }
 
 .line :hover {
-  color: var(--primary);
+  /**color: var(--primary);**/
+  text-decoration: underline;
 }
 
 .image {
@@ -407,6 +411,16 @@ h1 {
   .weiter {
     position: absolute;
   }
+
+  .line h1 {
+      margin-top: -4px;
+      font-size: 40px;
+      line-height: 35px;
+    }
+  
+    .weiter {
+      font-size: 15px;
+    }
 }
 
 /* D A T E N */
