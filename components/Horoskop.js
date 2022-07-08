@@ -52,7 +52,9 @@ const Horoskop = (props) => {
 
 
   return (
-    <div className="horoskopOuter" style={running ? style01 : none}>
+    <div className="horoskopOuter" 
+    // style={running ? style01 : none}
+    >
       <div className="zodiacWrapper" >
         <div>{zodiac.current_date}</div>
         <div className="zodiacHeader">

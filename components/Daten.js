@@ -10,27 +10,32 @@ const Daten = () => {
 
   useEffect(() => {
     setHeight(elementRef.current.clientHeight);
-
-  }, []);
+  });
 
   console.log(height);
 
   return (
     <main className="daten">
-      <div className="horoskopWrapper"  >
+      <div className="horoskopWrapper">
         <div ref={elementRef}>
-          <Horoskop zodiac={"cancer"} height={height}/>
-          <Horoskop zodiac={"leo"} height={height}/>
-          <Horoskop zodiac={"virgo"} height={height}/>
-          <Horoskop zodiac={"libra"} height={height}/>
-          <Horoskop zodiac={"scorpio"} height={height}/>
-          <Horoskop zodiac={"sagittarius"} height={height}/>
-          <Horoskop zodiac={"capricorn"} height={height}/>
-          <Horoskop zodiac={"aquarius"} height={height}/>
-          <Horoskop zodiac={"pisces"} height={height}/>
-          <Horoskop zodiac={"aries"} height={height}/>
-          <Horoskop zodiac={"taurus"} height={height}/>
-          <Horoskop zodiac={"gemini"} height={height}/>
+          <Horoskop zodiac={"cancer"} height={height} />
+          <Horoskop zodiac={"leo"} height={height} />
+          <Horoskop zodiac={"virgo"} height={height} />
+          <Horoskop zodiac={"libra"} height={height} />
+          <Horoskop zodiac={"scorpio"} height={height} />
+          <Horoskop zodiac={"sagittarius"} height={height} />
+          <Horoskop zodiac={"capricorn"} height={height} />
+          <Horoskop zodiac={"aquarius"} height={height} />
+          <Horoskop zodiac={"pisces"} height={height} />
+          <Horoskop zodiac={"aries"} height={height} />
+          <Horoskop zodiac={"taurus"} height={height} />
+          <Horoskop zodiac={"gemini"} height={height} />
+          {/* <Horoskop zodiac={"cancer"} height={height} />
+          <Horoskop zodiac={"leo"} height={height} />
+          <Horoskop zodiac={"virgo"} height={height} />
+          <Horoskop zodiac={"libra"} height={height} />
+          <Horoskop zodiac={"scorpio"} height={height} />
+          <Horoskop zodiac={"sagittarius"} height={height} /> */}
         </div>
       </div>
 
@@ -45,10 +50,14 @@ const Daten = () => {
         </div>
         <div className="graphWrapper">
           <Graph symbol={"PEP"} stockName={"PepsiCo, Inc"} />
-          <Graph symbol={"BABA"} stockName={"Alibaba Group Holding"} />
+          <Graph symbol={"BABA"} stockName={"Alibaba Group"} />
         </div>
         <div className="graphWrapper">
           <Graph symbol={"ADBE"} stockName={"Adobe Inc."} />
+          <Graph symbol={"MCD"} stockName={"McDonald's Corp."} />
+        </div>
+        <div className="graphWrapper">
+          <Graph symbol={"DAX"} stockName={"Adobe Inc."} />
           <Graph symbol={"MCD"} stockName={"McDonald's Corporation"} />
         </div>
       </div>

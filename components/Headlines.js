@@ -113,7 +113,7 @@ const Headlines = () => {
   }
 
   useEffect(() => {
-    setViewportHeight(window.innerHeight), console.log(viewportHeight);
+    setViewportHeight(window.innerHeight);
   });
 
   return (
