@@ -48,7 +48,7 @@ const headlineTexts = [
   `Rekord! 1 Jahr in nur 3 Tagen`,
   `Kim K. über ABK Jahresausstellung: "das lässt sich not in words fassen"`,
   `Genial! Studentin wendet diesen einfachen Trick an`,
-  `Abi, Hochzeit, Rundgang – 3 Schlüsselmomente die ihr leben verändern werden`,
+  `Abi, Hochzeit, Rundgang – 3 Schlüsselmomente die ihr leben verändern`,
   `Unfassbar: Professor (54) klaut Feuerzeug – droht jetzt Stammheim?`,
   `Genial! Student wendet diesen einfachen Trick an`,
   `Schock! Wo soll das noch hinführen?`,
@@ -63,7 +63,7 @@ const headlineTexts = [
   `Architekturstudentin nach Master:"Worauf kann ich jetzt noch bauen?"`,
   `Genial! Student wendet diesen einfachen Trick an`,
   `Durchbruch in der Holzwerkstatt: "Student trifft Nagel auf den Kopf"`,
-  `"Ktpp" – Was hat das nur zu bedeuten?`,
+  `"Ktpp" – Was hat das zu bedeuten?`,
 ];
 const headlineImages = [
   image01,
