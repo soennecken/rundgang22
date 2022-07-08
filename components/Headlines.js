@@ -132,7 +132,7 @@ const Headlines = () => {
         </div>
 
         <div className="line">
-          <h1>{headlineTexts[index]}</h1>
+          <h1>{headlineTexts[index]}<br/><br/></h1>
           <div className="weiter">
             <a href="https://abk.live" target="_blank" rel="noreferrer">
               <div>→ zur digitalen Ausstellung</div>

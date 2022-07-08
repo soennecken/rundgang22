@@ -414,10 +414,6 @@ main .headlines {
       font-size: 38px;
       line-height: 33px;
     }
-
-  .line :hover {
-      text-decoration: none;
-  }
 }
 
 /* D A T E N */
