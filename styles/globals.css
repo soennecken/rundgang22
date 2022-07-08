@@ -84,7 +84,11 @@ main .webcam {
   transition: height 1s linear, opacity 2s linear;
   z-index: 1000;
   overflow: hidden;
-  background: linear-gradient(var(--primary) 0%, var(--primary) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    var(--primary) 0%,
+    var(--primary) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .loadingDesktop {
@@ -98,11 +102,9 @@ main .webcam {
   display: none;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .loadingMobile {
-    display: block
+    display: block;
   }
 
   .loadingDesktop {
@@ -380,11 +382,8 @@ main .headlines {
   width: 33.3%;
   height: 100%;
   overflow: hidden;
-}
-
-.thumbnailWrapper * {
-  /* height: 100%; */
-  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -410,10 +409,14 @@ main .headlines {
   }
 
   .line h1 {
-      margin-top: -5.5px;
-      font-size: 38px;
-      line-height: 33px;
-    }
+    margin-top: -5.5px;
+    font-size: 38px;
+    line-height: 33px;
+  }
+
+  .line :hover {
+    text-decoration: none;
+  }
 }
 
 /* D A T E N */
