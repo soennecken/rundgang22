@@ -57,8 +57,8 @@ const Daten = () => {
           <Graph symbol={"MCD"} stockName={"McDonald's Corp."} />
         </div>
         <div className="graphWrapper">
-          <Graph symbol={"DAX"} stockName={"Adobe Inc."} />
-          <Graph symbol={"MCD"} stockName={"McDonald's Corporation"} />
+          <Graph symbol={"DAX"} stockName={"DAX Germany"} />
+          <Graph symbol={"DJIA"} stockName={"Dow Jones"} />
         </div>
       </div>
     </main>
