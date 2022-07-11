@@ -32,6 +32,9 @@ import image28 from "../public/images/image28.png";
 import image29 from "../public/images/image29.png";
 import image30 from "../public/images/image30.png";
 
+import abklogo from "../public/images/abk_logo.png";
+
+
 
 const headlineTexts = [
   `Genial! Student wendet diesen einfachen Trick an`,
@@ -140,6 +143,13 @@ const Headlines = () => {
           </div>
         </div>
       </div>
+
+      <div className="abklogoWrapper">
+        <div className="abklogo">
+          <Image src={abklogo} placeholder="blur"/>
+        </div>
+      </div>
+
     </main>
   );
 };
